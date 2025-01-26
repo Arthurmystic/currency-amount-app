@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(120deg, #9C27B0, #EDE7F6, #F4F4F9);
+    background-size: 200% 200%;
+    animation: gradient-animation 6s ease infinite;
+
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+header {
+    background-color: #9C27B0;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem; /* Increased padding for better spacing */
+    background-color: #ffffff;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.currency-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem; /* Consistent spacing between elements */
+}
+
+.currency-row select, 
+.currency-row input {
+    width: 180px; /* Slightly larger for a more modern feel */
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    transition: all 0.3s ease; /* Smooth transition for interactivity */
+}
+
+.currency-row select:hover, 
+.currency-row input:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 6px rgba(33, 150, 243, 0.5); /* Glow effect */
+    outline: none;
+}
+
+.currency-row div {
+    width: 180px; /* Matched width with inputs for consistency */
+    padding: 0.5rem;
+}
+
+.result {
+    margin-top: 2rem;
+    font-size: 1.5rem; /* Slightly larger for emphasis */
+    text-align: center;
+    color: #555; /* Subtle text color for results */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .currency-row {
+        flex-direction: column; /* Stack elements on smaller screens */
+        gap: 0.5rem; /* Adjust spacing */
+    }
+
+    .currency-row select, 
+    .currency-row input, 
+    .currency-row div {
+        width: 100%; /* Full width on small screens */
+    }
+}

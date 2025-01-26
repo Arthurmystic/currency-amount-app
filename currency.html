@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange App</title>
+    <!-- <link rel="stylesheet" href="currency.css"> -->
+    <!-- <link rel="stylesheet" href="currency-pink.css"> -->
+    <link rel="stylesheet" href="currency-green.css">
+    <!-- <link rel="stylesheet" href="currency-teal.css">
+    <link rel="stylesheet" href="currency-purple.css"> -->
+
+</head>
+<body>
+    <header>J. Hayat's Currency Exchange App</header>
+    <div class="container">
+        <div class="currency-row" id="currency-row-from">
+            <select id="continentFrom">
+                <option value="" disabled selected>Select Continent</option>
+            </select>
+            <select id="fromCurrency" disabled>
+                <option value="" disabled selected>Select Currency</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount" />
+        </div>
+
+        <div class="currency-row" id="currency-row-to">
+            <select id="continentTo">
+                <option value="" disabled selected>Select Continent</option>
+            </select>
+            <select id="toCurrency" disabled>
+                <option value="" disabled selected>Select Currency</option>
+            </select>
+            <div id="spaceholder" ></div>
+        </div>
+        <!-- <button id="convertButton">Convert</button> -->
+        <div class="result" id="result">Please enter details and press convert.</div>
+    </div>
+  <script src="currency-converter.js"></script>
+</body>
+</html>
