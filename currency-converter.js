@@ -1,3 +1,16 @@
+ function setTheme() {
+//     const root = document.documentElement;
+//     // const newTheme = root.className === 'dark' ? 'light' : 'dark';
+   
+// 
+//  root.className = newTheme;
+    
+//     // document.querySelector('.theme-name').textContent = newTheme;
+   }
+  
+//   document.querySelector('.theme-toggle').addEventListener('click', setTheme)
+
+
 const currenciesByContinent = {
     "Africa": [
     { "code": "ZAR", "name": "South African Rand" },
@@ -159,7 +172,7 @@ const currenciesByContinent = {
 
 Object.keys(currenciesByContinent).forEach(continent => {
     currenciesByContinent[continent].sort((a, b) => a.name.localeCompare(b.name));
-});
+}); // sorts the countries in alphabetical order
 
 const continentFromSelect = document.getElementById('continentFrom');
 const fromCurrencySelect = document.getElementById('fromCurrency');

@@ -1,13 +1,45 @@
 
+:root.blue{
+--body-bg-col: linear-gradient(120deg, #2196F3, #e8eaf6, #f4f4f9);
+--header-bg-col: #2196F3; /* Professional blue tone */
+--hov-foc-bord-col: #2196F3;
+--hov-foc-box-shad: 0 0 6px rgba(33, 150, 243, 0.5); /* Glow effect */
+}
+
+:root.pink{
+    --body-bg-col: linear-gradient(120deg, #FFC0CB, #FFE4E1, #F4F4F9);
+    --header-bg-col: #FF69B4; /* Pink header */
+    --hov-foc-bord-col: #FF69B4; /* Pink border on hover/focus */
+    --hov-foc-box-shad: 0 0 6px rgba(255, 105, 180, 0.5);
+    }
+
+:root.purple{
+    --body-bg-col: linear-gradient(120deg, #9C27B0, #EDE7F6, #F4F4F9);
+    --header-bg-col: #9C27B0;
+    --hov-foc-bord-col: #9C27B0;
+    --hov-foc-box-shad: 0 0 6px rgba(156, 39, 176, 0.5);
+    }
+
+:root.teal{
+    --body-bg-col: linear-gradient(120deg, #009688, #E0F7FA, #F4F4F9);
+    --header-bg-col: #009688;
+    --hov-foc-bord-col: #00796B;
+    --hov-foc-box-shad: 0 0 6px rgba(0, 150, 136, 0.5);
+    }
+
+:root.green{
+    --body-bg-col: linear-gradient(120deg, #4CAF50, #E8F5E9, #F4F4F9);
+    --header-bg-col: #4CAF50;
+    --hov-foc-bord-col: #4CAF50;
+    --hov-foc-box-shad: 0 0 6px rgba(76, 175, 80, 0.5);
+    }
+
 
 body {
     font-family: 'Roboto', Arial, sans-serif; /* Modern, professional font */
-    /* Subtle gradient background */
-    /* background: linear-gradient(to bottom right, #f4f4f9, #e8eaf6);  */
-    background: linear-gradient(120deg, #2196F3, #e8eaf6, #f4f4f9);
+    background: var(--body-bg-col);
     background-size: 200% 200%;
     animation: gradient-animation 6s ease infinite;
-
     margin: 0;
     padding: 0;
     color: #333; /* Default text color */
@@ -20,12 +52,8 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-
-
-
-
-header {
-    background-color: #2196F3; /* Professional blue tone */
+#head {
+    background-color: var(--header-bg-col);
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -33,6 +61,13 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+button.toggle-theme{
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 .container {
@@ -65,8 +100,8 @@ header {
 
 .currency-row select:hover, 
 .currency-row input:focus {
-    border-color: #2196F3;
-    box-shadow: 0 0 6px rgba(33, 150, 243, 0.5); /* Glow effect */
+    border-color: var(--hov-foc-bord-col);
+    box-shadow: var(--hov-foc-box-shad);
     outline: none;
 }
 
