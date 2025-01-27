@@ -29,7 +29,7 @@ function setTheme() {
   // document.querySelector('.theme-name').textContent = newTheme;
 }
 
-document.querySelector('.toggle-theme').addEventListener('click', setTheme)
+// document.querySelector('.toggle-theme').addEventListener('click', setTheme)
 
 
 const currenciesByContinent = {

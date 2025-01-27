@@ -34,6 +34,31 @@
     --hov-foc-box-shad: 0 0 6px rgba(76, 175, 80, 0.5);
     }
 
+:root {
+    --body-bg-col: linear-gradient(120deg, #009688, #E0F7FA, #F4F4F9);
+    --header-bg-col: #009688;
+    --hov-foc-bord-col: #80CBC4;
+    --hov-foc-box-shad: 0 0 6px rgba(128, 203, 196, 0.5);
+    --theme-name: "light";
+}
+
+/* if want to change theme based on user OS, in conjucntion with <html class="theme-name" ... in html
+@media(prefers-color-scheme:
+        dark) {
+            :root{
+                --body-bg-col: linear-gradient(120deg, #004D40, #263238, #121212);
+                --header-bg-col: #004D40;
+                --hov-foc-bord-col: #003D33;
+                --hov-foc-box-shad: 0 0 6px rgba(0, 77, 64, 0.5);
+                --theme-name: "dark";
+        }
+    }
+
+#theme-name::after {
+  content: var(--theme-name);
+}
+
+*/
 
 body {
     font-family: 'Roboto', Arial, sans-serif; /* Modern, professional font */
